@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Bruno";
+    src: url("../../sources/fonts/BrunoAceSC-Regular.ttf");
+}
+
+:root {
+    --bg-color: rgb(29, 28, 28);
+    --color-hint: rgb(35, 34, 34);
+    --color-border: rgb(63, 63, 63);
+    --text-color: rgb(238, 238, 238);
+    --select-outline-color: rgb(0, 56, 115);
+    --search-color: rgb(202, 3, 3);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    color: var(--text-color);
+}
+
+.left-section,
+.right-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.left-section,
+.right-section,
+.center-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.center-section {
+    height: 2rem;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 22px;
+    font-family: Bruno, 'Times New Roman', Times, serif;
+}
+
+.left-section img {
+    height: 30%;
+}
+
+
+.select {
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem 0 0 1rem;
+    background: var(--color-hint);
+    color: var(--text-color);
+    border-color: var(--color-border);
+    z-index: 1;
+}
+
+.select:focus {
+    outline: solid var(--select-outline-color);
+}
+
+#searchInput {
+    height: calc(100% - 1.5px);
+    padding: 0;
+    color: var(--text-color);
+    border: 1px solid var(--color-border);
+    border-left: none;
+    background: var(--color-hint);
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+.search-btn {
+    justify-self: -10rem;
+    height: 100%;
+    width: 4rem;
+    margin-left: -1rem;
+    background: var(--search-color);
+    border-radius: 1rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+.search-btn img {
+    height: 80%;
+}
+
+.cart {
+    display: flex;
+    cursor: pointer;
+}
+
+.cart img {
+    height: 1.6rem;
+}
+
+.cart-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--search-color);
+    margin-top: -1rem;
+    margin-left: -0.4rem;
+    border-radius: 0.2rem;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.sign-in {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-color);
+    background-color: var(--search-color);
+    border: 0;
+    cursor: pointer;
+}
+
+.sign-in img {
+    width: 1.6rem;
+}
+
+.night-ico {
+    height: 1.6rem;
+    cursor: pointer;
+}
