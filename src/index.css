@@ -1,7 +1,7 @@
 :root {
-    --bg-color: rgb(18, 18, 18);
-    --navbar-bg-color: rgb(27, 27, 27);
-    --color-hint: rgb(35, 34, 34);
+    --bg-color: rgb(16, 16, 16);
+    --navbar-bg-color: rgb(32, 32, 32);
+    --color-hint: rgb(44, 43, 43);
     --color-border: rgb(63, 63, 63);
     --text-color: rgb(238, 238, 238);
     --select-outline-color: rgb(0, 56, 115);
@@ -9,7 +9,7 @@
     --navbar-height: 4rem;
     --side-navbar-width: 12rem;
     --content-width: calc(100vw - var(var(--side-navbar-width)));
-    --color-line: rgb(34, 34, 34);
+    --color-line: rgb(49, 49, 49);
     --temp-bg-color: rgb(9, 55, 74);
 
 }
@@ -29,7 +29,7 @@ p {
 }
 
 .content-container {
-    padding: 1rem;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;

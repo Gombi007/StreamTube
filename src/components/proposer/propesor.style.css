@@ -1,0 +1,73 @@
+.proposer-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 30wv;
+}
+
+.proposer-main {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.proposer-main img {
+    width: 100%;
+    height: 100%;
+    transition: transform 300ms;
+}
+
+.proposer-main img:hover {
+    transform: scale(1.2);
+    transition: transform 300ms;
+}
+
+
+.proposer-side {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+/*Upper img*/
+.proposer-side-upper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.proposer-side-upper img {
+    transition: transform 300ms;
+    width: 100%;
+    height: 100%;
+}
+
+.proposer-side-upper img:hover {
+    transform: scale(1.2);
+    transition: transform 300ms;
+}
+
+/*Upper lower*/
+.proposer-side-lower-1,
+.proposer-side-lower-2 {
+    width: 50%;
+    overflow: hidden;
+
+}
+
+.proposer-side-lower-1 img,
+.proposer-side-lower-2 img {
+    width: 100%;
+    height: 100%;
+    transition: transform 300ms;
+
+}
+
+.proposer-side-lower-1 img:hover,
+.proposer-side-lower-2 img:hover {
+    transform: scale(1.2);
+    transition: transform 300ms;
+
+}

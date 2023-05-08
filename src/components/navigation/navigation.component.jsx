@@ -27,7 +27,7 @@ const Navigation = () => {
                         <option value="collection">Collections</option>
                         <option value="user">Users</option>
                     </select>
-                    <input type="text" name="searchInput" id="navbar-searchInput" />
+                    <input type="text" name="searchInput" id="navbar-searchInput" placeholder='Search here...' />
                     <button className="navbar-search-btn">
                         <img src={searchIco} alt="search-icon" />
                     </button>
