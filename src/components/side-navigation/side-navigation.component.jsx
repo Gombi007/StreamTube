@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './side-navigation.style.css';
-import cartIco from '../../sources/icons/cart.png';
+import shopIco from '../../sources/icons/shop.png';
 import homeIco from '../../sources/icons/home.png';
 import leftArrowIco from '../../sources/icons/left_arrow.png';
 import rightArrowIco from '../../sources/icons/right_arrow.png';
@@ -32,7 +32,7 @@ const SideNavigation = () => {
                 <p>Home</p>
             </Link>
             <Link className={activeLink === '/shop' ? 'sidenav-link sidenav-link-active' : 'sidenav-link'} to='/shop' onClick={() => handleLinkClick('/shop')}>
-                <img src={cartIco} alt="cart-ico" />
+                <img src={shopIco} alt="cart-ico" />
                 <p>Shop</p>
             </Link>
         </div>
