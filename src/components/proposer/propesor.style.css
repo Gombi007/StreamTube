@@ -6,6 +6,7 @@
 
 img {
     object-fit: cover;
+    transition: transform 500ms;
 }
 
 /*Main img*/
@@ -21,7 +22,6 @@ img {
 .proposer-main img {
     width: 100%;
     height: 100%;
-    transition: transform 500ms;
 }
 
 .proposer-side {
@@ -39,11 +39,9 @@ img {
 }
 
 .proposer-side-upper img {
-    transition: transform 500ms;
     width: 100%;
     height: 100%;
 }
-
 
 /*Lower images*/
 .proposer-side-lower-1,
@@ -57,11 +55,9 @@ img {
 .proposer-side-lower-2 img {
     width: 100%;
     height: 100%;
-    transition: transform 500ms;
-
 }
 
-/*Info text on picture*/
+/*Info DIV on picture*/
 .proposer-info-div {
     position: absolute;
     display: flex;
@@ -70,9 +66,14 @@ img {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.17), rgb(0, 0, 0));
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.534),
+            rgb(0, 0, 0));
 }
 
+/* Time */
 .proposer-info-time {
     width: 100%;
     height: 33.33%;
@@ -89,21 +90,30 @@ img {
     border-radius: 3px;
 }
 
+/* Play Button */
+.proposer-info-play {
+    width: 100%;
+    height: 33.33%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposer-info-play img {
+    height: 3rem;
+    width: 3rem;
+}
+
+/* Info box*/
 .proposer-info-text {
     width: 100%;
     height: 33.33%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: .5rem;
+    padding: 0.5rem;
     font-size: 1vw;
-
-}
-
-.proposer-info-div:hover+img {
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: transform 500ms;
 }
 
 .proposer-info-text-title {
@@ -129,39 +139,26 @@ img {
     width: 0.8vw;
 }
 
-
 .proposer-info-text-title-small {
     font-size: 1vw;
 }
 
-.proposer-info-play {
-    width: 100%;
-    height: 33.33%;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.proposer-info-play img {
-    height: 3rem;
-    width: 3rem;
+/*All hover on info DIV*/
+.proposer-info-div:hover+img {
+    transform: scale(1.2);
+    transition: transform 500ms;
 }
 
 .proposer-info-div:hover .proposer-info-play {
-    display: flex;
-    justify-content: center;
     opacity: 1;
     transition: opacity 500ms;
 }
 
 .proposer-info-div:hover {
-    background: rgba(0, 0, 0, 0.887);
+    background: rgba(0, 0, 0, 0.822);
     transition: all 500ms;
     cursor: pointer;
-
 }
-
 
 @media only screen and (min-width: 1200px) {
 

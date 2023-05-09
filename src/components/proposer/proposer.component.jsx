@@ -75,7 +75,7 @@ const Proposer = () => {
                         </p>
                     </div>
                 </div>
-                <img src={Pic1} alt="first-picture" />
+                <img src={Pic1} alt="first-pic" />
             </div>
 
             <div className="proposer-side">
@@ -108,7 +108,7 @@ const Proposer = () => {
                             </p>
                         </div>
                     </div>
-                    <img src={Pic2} alt="second-picture" />
+                    <img src={Pic2} alt="second-pic" />
                 </div>
 
                 <div className='proposer-side-lower-1'>
@@ -139,7 +139,7 @@ const Proposer = () => {
                             </p>
                         </div>
                     </div>
-                    <img src={Pic3} alt="third-picture" />
+                    <img src={Pic3} alt="third-pic" />
                 </div>
 
                 <div className='proposer-side-lower-2'>
@@ -153,7 +153,7 @@ const Proposer = () => {
                             <img src={PlayIco} alt="play-icon" />
                         </div>
                         <div className="proposer-info-text">
-                            <p className='proposer-info-text-title  proposer-info-text-title-small'>{movies[3].title}w</p>
+                            <p className='proposer-info-text-title  proposer-info-text-title-small'>{movies[3].title}</p>
                             <p className='proposer-info-text-details'>
                                 <span>
                                     <img src={UserIco} alt="user-icon" />
@@ -170,7 +170,7 @@ const Proposer = () => {
                             </p>
                         </div>
                     </div>
-                    <img src={Pic4} alt="fourth-picture" />
+                    <img src={Pic4} alt="fourth-pic" />
                 </div>
 
             </div>
